@@ -105,13 +105,13 @@ const Navbar = () => {
                         <a href="#" className="flex items-center gap-[2px] py-2">
                             Tailoring
                             <span>
-                                <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
+                                <FaCaretDown className="transition-all   duration-200 group-hover:rotate-180" />
                             </span>
                         </a>
                         <div className="absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white dark:bg-gray-800 p-2 text-black dark:text-white shadow-md">
                             <ul>
                                 {DropdownLinks.map((data) => (
-                                    <li key={data.id} className="hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md p-2">
+                                    <li key={data.id} className="hover:text-primary  dark:hover:bg-gray-700 rounded-md p-2">
                                         <a href={data.link} className="block">{data.name}</a>
                                     </li>
                                 ))}
@@ -120,7 +120,7 @@ const Navbar = () => {
                     </li>
                     {/* Login Button */}
                     <li>
-    <button onClick={toggleModal} className="px-4 py-2 text-white-500   hover:text-primary ">
+    <button onClick={toggleModal} className="px-4 py-2 text-white-500  hover:text-primary ">
         Login
     </button>
 </li>
